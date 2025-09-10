@@ -79,24 +79,45 @@ a:hover {
   pointer-events: auto; /* Garante que o botão não seja coberto por outros elementos */
 }
   
-  .acessibilidade-menu {
-    display: none;
-    position: absolute;
-    bottom: 60px;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-  }
-  
-  .acessibilidade-menu button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .acessibilidade-menu button:last-child {
-    margin-bottom: 0;
-  }
+.acessibilidade-menu {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background-color: #161b22;
+  border: 1px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  width: 220px;
+}
+
+.acessibilidade-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.acessibilidade-menu button i {
+  font-size: 16px;
+}
+
+/* Animação ao clicar no botão de acessibilidade */
+.acessibilidade-btn:active {
+  transform: scale(0.9) rotate(-10deg);
+  transition: transform 0.2s ease;
+}
+
+.acessibilidade-btn.animar {
+  animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2) rotate(10deg); }
+  100% { transform: scale(1); }
+}
