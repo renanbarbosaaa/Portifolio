@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+  color: #c9d1d9;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background: #002bff;
+  background: radial-gradient(circle, rgba(0, 43, 255, 1) 0%, rgba(0, 0, 0, 1) 59%);
+  color: white;
+  position: relative;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.projeto {
+  background-color: #161b22;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.alto-contraste {
+    background-color: black;
+    color: yellow;
+  }
+  
+  .alto-contraste a {
+    color: cyan;
+  }
+
+  /* Garante que o botão de acessibilidade esteja acima de outros elementos */
+.acessibilidade {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; /* Certifique-se de que o z-index é alto */
+}
+
+.acessibilidade-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  pointer-events: auto; /* Garante que o botão não seja coberto por outros elementos */
+}
+  
+  .acessibilidade-menu {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .acessibilidade-menu button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .acessibilidade-menu button:last-child {
+    margin-bottom: 0;
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renan Barbosa - Desenvolvedor Back-end</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="acessibilidade" class="acessibilidade">
+  <button id="acessibilidade-btn" class="acessibilidade-btn" aria-label="Abrir menu de acessibilidade">☰</button>
+  <div id="acessibilidade-menu" class="acessibilidade-menu">
+    <button id="aumentar-fonte" class="btn btn-secondary">Aumentar Fonte</button>
+    <button id="diminuir-fonte" class="btn btn-secondary">Diminuir Fonte</button>
+    <button id="alto-contraste" class="btn btn-secondary">Alto Contraste</button>
+    <button id="resetar" class="btn btn-secondary">Resetar</button>
+  </div>
+</div>
+
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+    <h1 class="display-3 fw-bold hero-title">Renan Barbosa</h1>
+    <p class="lead hero-subtitle">Desenvolvedor Back-end</p>
+    <a href="#sobre" class="btn btn-outline-light mt-4 hero-btn">Conheça meu portifólio</a>
+    <span class="scroll-indicator">▼</span>
+  </section>
+
+  <section id="sobre" class="container py-5 section">
+    <h2>Sobre mim</h2>
+    <p>Atualmente estou no último ano do curso técnico de Desenvolvimento de Sistemas
+      oferecido pela Etec Basilides de Godoy. Tenho conhecimento em Python, JavaScript, 
+      HTML&CSS, Flutter, MySQL, Git e GitHub.
+    </p>
+  </section>
+
+  <section id="projetos" class="container py-5 section">
+    <h2>Meus Projetos</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class="projeto p-3">
+          <h3>Island Noronha Hotel</h3>
+          <p>Um sistema desenvolvido em Python para um projeto escolar.</p>
+          <a href="https://github.com/renanbarbosaaa/Island-Noronha-Hotel" target="_blank">Ver no GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="projeto p-3">
+          <h3>Tech-Taste</h3>
+          <p>Aplicativo desenvolvido em Flutter, em uma Imersão Mobile - Alura.</p>
+          <a href="https://github.com/renanbarbosaaa/Tech-Taste" target="_blank">Ver no GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="projeto p-3">
+          <h3>Jogo NIM</h3>
+          <p>Jogo desenvolvido em Python, no meu curso de Introdução ao Python - USP.</p>
+          <a href="https://github.com/renanbarbosaaa/Jogo-NIM" target="_blank">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato 
+  <section id="contato" class="container py-5 section">
+    <h2>Contato</h2>
+    <p>Quer conversar sobre um projeto ou oportunidade? Me envie uma mensagem!</p>
+    <a href="mailto:renanbarbosasilvaa@gmail.com" class="btn btn-primary">Enviar e-mail</a>
+  </section>
+  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
