@@ -12,6 +12,35 @@
 </head>
 <body>
 
+  <!-- Menu de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Renan Barbosa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div id="acessibilidade" class="acessibilidade">
     <button id="acessibilidade-btn" class="acessibilidade-btn" aria-label="Abrir menu de acessibilidade">
       <i class="fas fa-universal-access"></i>
@@ -27,7 +56,7 @@
     </div>
   </div>
   
-  <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+  <section id="inicio" class="hero d-flex flex-column justify-content-center align-items-center text-center">
     <h1 class="display-3 fw-bold hero-title animate-on-load">Renan Barbosa</h1>
     <p class="lead hero-subtitle animate-on-load">Desenvolvedor Back-end</p>
     <a href="#sobre" class="btn btn-outline-light mt-4 hero-btn animate-on-load">Conheça meu portifólio</a>
@@ -40,6 +69,52 @@
       oferecido pela Etec Basilides de Godoy. Tenho conhecimento em Python, JavaScript, 
       HTML&CSS, Flutter, MySQL, Git e GitHub.
     </p>
+  </section>
+
+  <section id="habilidades" class="container py-5 section">
+    <h2>Habilidades</h2>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="skill-item">
+          <h5>Python</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-item mt-3">
+          <h5>JavaScript</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-item mt-3">
+          <h5>HTML & CSS</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="skill-item">
+          <h5>Flutter</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-item mt-3">
+          <h5>MySQL</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item mt-3">
+          <h5>Git & GitHub</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="projetos" class="container py-5 section">
@@ -65,6 +140,37 @@
           <p>Jogo desenvolvido em Python, no meu curso de Introdução ao Python - USP.</p>
           <a href="https://github.com/renanbarbosaaa/Jogo-NIM" target="_blank">Ver no GitHub</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container py-5 section">
+    <h2>Contato</h2>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope me-2"></i> Email: renanbarbosasilvaa@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Localização: São Paulo, Brasil</p>
+        </div>
+        <div class="social-links mt-4">
+          <a href="https://www.linkedin.com/in/renan-barbosa-7aa787382/" class="social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/renanbarbosaaa" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/ren4nrb" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <form class="contact-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Seu nome" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Seu email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
       </div>
     </div>
   </section>
