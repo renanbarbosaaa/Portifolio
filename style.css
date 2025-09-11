@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: black;
+  background-color: #8A8A8A;
   color: #c9d1d9;
   scroll-behavior: smooth;
 }
@@ -9,10 +9,11 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+
 .hero {
   height: 100vh;
-  background: #002bff;
-  background: radial-gradient(circle, rgba(0, 43, 255, 1) 0%, rgba(0, 0, 0, 1) 59%);
+  background: #8a8a8a;
+  background: linear-gradient(0deg, rgba(138, 138, 138, 1) 0%, rgba(0, 43, 255, 1) 55%);
   color: white;
   position: relative;
 }
@@ -58,12 +59,17 @@ a:hover {
     color: cyan;
   }
 
-  /* Garante que o botão de acessibilidade esteja acima de outros elementos */
+  #rodape{
+    background-color: black;
+    text-align: center;
+  }
+
+  
 .acessibilidade {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 9999; /* Certifique-se de que o z-index é alto */
+  z-index: 9999;
 }
 
 .acessibilidade-btn {
@@ -76,7 +82,7 @@ a:hover {
   font-size: 24px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  pointer-events: auto; /* Garante que o botão não seja coberto por outros elementos */
+  pointer-events: auto; 
 }
   
 .acessibilidade-menu {
@@ -106,7 +112,6 @@ a:hover {
   font-size: 16px;
 }
 
-/* Animação ao clicar no botão de acessibilidade */
 .acessibilidade-btn:active {
   transform: scale(0.9) rotate(-10deg);
   transition: transform 0.2s ease;
@@ -114,6 +119,23 @@ a:hover {
 
 .acessibilidade-btn.animar {
   animation: pulse 0.4s ease;
+}
+
+.animate-on-load {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes pulse {
